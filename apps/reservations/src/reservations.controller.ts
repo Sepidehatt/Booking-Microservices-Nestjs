@@ -13,7 +13,7 @@ import { UpdateReservationDto } from './reservations/dto/update-reservation.dto'
 
 @Controller('reservations')
 export class ReservationsController {
-  constructor(private readonly reservationsService: ReservationsService) { }
+  constructor(private readonly reservationsService: ReservationsService) {}
 
   @Post()
   create(@Body() createReservationDto: CreateReservationDto) {
