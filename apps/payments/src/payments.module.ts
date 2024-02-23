@@ -12,6 +12,7 @@ import * as Joi from 'joi';
       isGlobal: true,
       validationSchema: Joi.object({
         PORT: Joi.number().required(),
+        STRIPE_SECRET_KEY: Joi.string().required(),
       }),
     }),
   ],
