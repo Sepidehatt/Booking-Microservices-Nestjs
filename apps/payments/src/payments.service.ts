@@ -15,7 +15,6 @@ export class PaymentsService {
   );
 
   async createCharge({ amount }: CreateChargeDto) {
-
     const paymentIntent = await this.stripe.paymentIntents.create({
       payment_method: 'pm_card_visa',
       amount: amount * 100,
