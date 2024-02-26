@@ -1,4 +1,4 @@
-import { CreateChargeDto, NOTIFICATIONS_SERVICE } from '@app/common';
+import { NOTIFICATIONS_SERVICE } from '@app/common';
 import { Inject, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { ClientProxy } from '@nestjs/microservices';
