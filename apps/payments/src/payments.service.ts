@@ -29,7 +29,10 @@ export class PaymentsService {
       currency: 'eur',
     });
 
-    this.notificationsService.emit('notify_email', { email });
+    this.notificationsService.emit('notify_email', {
+      email,
+      text: `Your Payment of ${amount * 100}EUR has completed successfully.`,
+    });
     return paymentIntent;
   }
 }
