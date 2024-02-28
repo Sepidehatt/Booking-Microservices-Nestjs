@@ -5,7 +5,7 @@ import { CurrentUser } from '../../../../libs/common/src/decorators/current-user
 import { JwtAuthGuard } from '../guards/jwt-auth.guard';
 import { UserDocument } from '@app/common';
 
-@Controller('users')
+@Controller('auth/users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
   @Post()
